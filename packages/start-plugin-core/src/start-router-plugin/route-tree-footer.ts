@@ -55,7 +55,7 @@ function buildRouteTreeFileFooter(opts: {
 
   appendFooterBlock(
     footer,
-    `declare module '@tanstack/${opts.framework}-start' {
+    `declare module '@tanstack/${opts.framework}-router' {
   interface Register {
     ssr: true
     router: Awaited<ReturnType<typeof getRouter>>`,
