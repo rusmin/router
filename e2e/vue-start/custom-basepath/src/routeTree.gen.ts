@@ -359,7 +359,7 @@ export const routeTree = rootRouteImport
 
 import type { getRouter } from './router.tsx'
 import type { createStart } from '@tanstack/vue-start'
-declare module '@tanstack/vue-start' {
+declare module '@tanstack/vue-router' {
   interface Register {
     ssr: true
     router: Awaited<ReturnType<typeof getRouter>>
